@@ -13,29 +13,55 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <div class="dropdown my-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Username requirements
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li class="dropdown-item">Username first character must be a letter [a-z]</li>
-                        <li class="dropdown-item">Username consists of alphanumeric characters (a-z0-9), lowercase, or uppercase.</li>
-                        <li class="dropdown-item">Username allowed of the dot (.), underscore (_), and hyphen (-).</li>
-                        <li class="dropdown-item">The dot (.), underscore (_), or hyphen (-) must not be the first or last character.</li>
-                        <li class="dropdown-item">The dot (.), underscore (_), or hyphen (-) does not appear consecutively, e.g., user..name</li>
-                        <li class="dropdown-item">The number of characters must be between 5 to 20.</li>
-                    </ul>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#username-requirements">
+                    Username requirements
+                </button>
+                <div class="modal fade" id="username-requirements" tabindex="-1" aria-labelledby="username-label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="username-label">Username requirements</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                - Username first character must be a letter.<br>
+                                -Username consists of alphanumeric characters lowercase, or uppercase.<br>
+                                - Username allowed of the dot, underscore, and hyphen.<br>
+                                - The dot, underscore, or hyphen must not be the last character.<br>
+                                - The dot, underscore, or hyphen does not appear consecutively<br>
+                                - The number of characters must be between 5 to 20.<br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="dropdown my-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Password requirements
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li class="dropdown-item">Password consists of alphanumeric characters (a-z0-9), lowercase, or uppercase.</li>
-                        <li class="dropdown-item">The number of characters must be between 8 to 10.</li>
-                    </ul>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#password-requirements">
+                    Password requirements
+                </button>
+                <div class="modal fade" id="password-requirements" tabindex="-1" aria-labelledby="password-label" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-center" id="password-label">password requirements</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                - Password consists of alphanumeric characters, lowercase, or uppercase.<br>
+                                - The number of characters must be between 8 to 10.<br>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary w-100" data-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
